@@ -1,0 +1,13 @@
+.background {
+  height: 50vh;
+  background-image: url("../../images/Landing/TorontoSkyline.jpg");
+  background-size: cover;
+}
+
+.h3 {
+  color: white;
+}
+
+.name_logo {
+  color: white;
+}
