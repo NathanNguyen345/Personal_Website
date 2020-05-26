@@ -1,0 +1,16 @@
+{
+  "EducationData": [
+    {
+      "logo": "2",
+      "schoolName": "San Jose State University",
+      "location": "San Jose, CA",
+      "major": "Industrial & System Engineering"
+    },
+    {
+      "logo": "1",
+      "schoolName": "De Anza College",
+      "location": "Cupertino, CA",
+      "major": "Computer Science"
+    }
+  ]
+}
