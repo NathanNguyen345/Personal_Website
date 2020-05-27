@@ -8,15 +8,25 @@ function ProjectBullet(props) {
     if (phase === "left") {
       return (
         <div className={`col-lg-6`}>
-          <h2>{title}</h2>
-          <h3>{description}</h3>
+          <div className="card border-info mb-3">
+            <div className="card-header">{title}</div>
+            <div className="card-body">
+              <h5 className="card-title">Primary card title</h5>
+              <p className="card-text">{description}</p>
+            </div>
+          </div>
         </div>
       );
     } else {
       return (
-        <div className={`col-lg-6 offset-md-6`}>
-          <h2>{title}</h2>
-          <h3>{description}</h3>
+        <div className={`col-lg-6 offset-lg-6`}>
+          <div className="card border-info mb-3">
+            <div className="card-header">{title}</div>
+            <div className="card-body">
+              <h5 className="card-title">Success card title</h5>
+              <p className="card-text">{description}</p>
+            </div>
+          </div>
         </div>
       );
     }
