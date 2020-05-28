@@ -1,4 +1,14 @@
+.education_wrapper {
+  background-color: #661719;
+  height: 50vh;
+}
+
 .education_logo {
   width: 300px;
   height: 175px;
+  margin-bottom: 25px;
+}
+
+.school_name {
+  color: white;
 }
