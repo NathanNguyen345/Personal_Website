@@ -1,13 +1,31 @@
 .background {
-  height: 50vh;
-  background-image: url("../../images/Landing/TorontoSkyline.jpg");
-  background-size: cover;
+  background-color: white;
+  height: 100vh;
 }
 
-.h3 {
-  color: white;
+.slide {
+  position: absolute;
+  width: 100vw;
+  z-index: 2;
 }
 
-.name_logo {
+.backdrop {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: white;
+}
+
+.slide_block {
+  background-color: #661719;
+  height: 33.3333vh;
+  left: -100vw;
+}
+
+.welcome {
   color: white;
+  padding-bottom: 5vh;
+  font-size: 100px;
+  opacity: 0;
 }

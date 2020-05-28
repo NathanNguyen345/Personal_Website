@@ -1,6 +1,6 @@
 .education_wrapper {
   background-color: #661719;
-  height: 50vh;
+  height: 40vh;
 }
 
 .education_logo {
@@ -9,6 +9,68 @@
   margin-bottom: 25px;
 }
 
+.title {
+  color: white;
+}
+
 .school_name {
   color: white;
+  font-size: 28px;
+}
+
+.location {
+  color: white;
+  font-size: 20px;
+}
+
+.major {
+  color: white;
+  font-size: 18px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .education_wrapper {
+    height: 80vh;
+  }
+  .education_logo {
+    margin-bottom: 5px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .education_wrapper {
+    height: 65vh;
+  }
+  .education_logo {
+    margin-bottom: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .education_wrapper {
+    height: 65vh;
+  }
+  .education_logo {
+    margin-bottom: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .education_wrapper {
+    height: 35vh;
+  }
+  .education_logo {
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .education_wrapper {
+    height: 40vh;
+  }
 }

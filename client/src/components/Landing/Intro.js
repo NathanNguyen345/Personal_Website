@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import classes from "./Landing.module.css";
+import { TweenMax, TimelineMax } from "gsap";
+import LandingSlide from "./LandingSlide";
 
 function Landing() {
   return (
-    <div className={`${classes.background} jumbotron`}>
-      <div className="container">
-        <div className="intro">
-          <h3 className={classes.h3}>Hey, I'm</h3>
+    <div className={`${classes.background}`}>
+      <div className="row h-100 justify-content-center align-items-center">
+        <div className={classes.backdrop}>
+          <div className="row h-100">
+            <div className="col-6">1</div>
+            <div className="col-6">2</div>
+          </div>
         </div>
-
-        <div className={`${classes.name_logo}`}>Nathan Nguyen</div>
+        <LandingSlide />
       </div>
     </div>
   );
