@@ -4,34 +4,34 @@ import img from "./me.JPG";
 import { TimelineMax } from "gsap";
 
 function Backdrop() {
-  const spinnerRef = useRef(null);
   const centerRef = useRef(null);
+  const spinnerRef = useRef(null);
   const tl = new TimelineMax();
 
   useEffect(() => {
-    tl.to(centerRef.current, { opacity: 1, duration: 1.5, delay: 5 }).to(
-      spinnerRef.current,
-      {
+    tl.from(centerRef.current, {
+      y: -300,
+      duration: 1.5,
+      ease: "bounce",
+      delay: 5,
+    })
+      .to(centerRef.current, { opacity: 1, duration: 1.5 }, "-=1.5")
+      .to(spinnerRef.current, {
         rotate: 180,
-        duration: 5,
+        duration: 2.5,
         repeat: -1,
         ease: "none",
-      }
-    );
+      });
   });
   return (
-    <React.Fragment>
-      <div
-        className={`${classes.center_img} row justify-content-center align-items-center`}
-        ref={centerRef}
-      >
-        <div className={classes.center_spinner}></div>
-        <div className={classes.center_spinner_top} ref={spinnerRef}></div>
-        <div className={classes.center_spinner_bottom}>
+    <div>
+      <div className={`${classes.center_circle}`} ref={centerRef}>
+        <div className={`${classes.center_spinner_border}`}>
           <img className={classes.center_picture} src={img}></img>
         </div>
+        <div className={`${classes.center_spinner}`} ref={spinnerRef}></div>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 

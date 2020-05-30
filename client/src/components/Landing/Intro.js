@@ -9,7 +9,11 @@ function Landing() {
   return (
     <div className={`${classes.background}`}>
       <div className="row h-100 justify-content-center align-items-center">
-        <Backdrop />
+        <div className={`${classes.backdrop_split} col-lg-4`}>1</div>
+        <div className={`${classes.backdrop_split} col-lg-4`}>
+          <Backdrop />
+        </div>
+        <div className={`${classes.backdrop_split} col-lg-4`}>3</div>
         <LandingSlide />
       </div>
     </div>
