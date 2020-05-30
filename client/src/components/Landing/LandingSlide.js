@@ -15,9 +15,21 @@ function LandingSlide() {
     tl.to(slideBlock1.current, { x: "100vw", duration: 0.5 })
       .to(slideBlock2.current, { x: "100vw", duration: 0.5 })
       .to(slideBlock3.current, { x: "100vw", duration: 0.5 })
-      .to(welcomeRef.current, { opacity: 1, duration: 1.5 })
-      .to(welcomeRef.current, { opacity: 0, duration: 1.5 })
-      .to(slideDiv.current, { y: "-100vh", duration: 0.5 });
+      .to(".welcome_text", {
+        opacity: 1,
+        duration: 1,
+        stagger: 0.2,
+      })
+      .to(
+        ".welcome_text",
+        {
+          opacity: 0,
+          duration: 1,
+          stagger: 0.2,
+        },
+        "-=1"
+      )
+      .to(slideDiv.current, { y: "-100vh", duration: 0.5 }, "+=.2");
   }, []);
 
   return (
@@ -28,10 +40,16 @@ function LandingSlide() {
       ></div>
       <div className={`${classes.slide_block} col-lg-12`} ref={slideBlock2}>
         <h3
-          className={`${classes.welcome} row h-100 justify-content-center align-items-center`}
+          className={`${classes.welcome} welcome row h-100 justify-content-center align-items-center`}
           ref={welcomeRef}
         >
-          Welcome
+          <div className={`${classes.welcome_text} welcome_text`}>W</div>
+          <div className={`${classes.welcome_text} welcome_text`}>E</div>
+          <div className={`${classes.welcome_text} welcome_text`}>L</div>
+          <div className={`${classes.welcome_text} welcome_text`}>C</div>
+          <div className={`${classes.welcome_text} welcome_text`}>O</div>
+          <div className={`${classes.welcome_text} welcome_text`}>M</div>
+          <div className={`${classes.welcome_text} welcome_text`}>E</div>
         </h3>
       </div>
       <div

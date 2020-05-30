@@ -10,12 +10,13 @@ function Backdrop() {
 
   useEffect(() => {
     tl.from(centerRef.current, {
-      y: -300,
+      y: -1000,
       duration: 1.5,
       ease: "bounce",
-      delay: 5,
+      delay: 5.7,
     })
       .to(centerRef.current, { opacity: 1, duration: 1.5 }, "-=1.5")
+      .to(spinnerRef.current, { opacity: 1, duration: 0.5 })
       .to(spinnerRef.current, {
         rotate: 180,
         duration: 2.5,
