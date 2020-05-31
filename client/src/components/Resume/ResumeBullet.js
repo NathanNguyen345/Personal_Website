@@ -15,17 +15,11 @@ function ResumeBullet(props) {
           { opacity: 0, y: 50 },
           { opacity: 1, y: 0, duration: 1.5 }
         );
-      } else {
-        gsap.fromTo(
-          bulletRef.current,
-          { opacity: 1, y: 0 },
-          { opacity: 0, y: 50, duration: 1.5 }
-        );
       }
     });
 
     observer.observe(bulletRef.current);
-  }, [bulletRef.current]);
+  }, [bulletRef]);
 
   return (
     <div

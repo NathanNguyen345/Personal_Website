@@ -28,7 +28,7 @@ function Backdrop() {
     <div>
       <div className={`${classes.center_circle}`} ref={centerRef}>
         <div className={`${classes.center_spinner_border}`}>
-          <img className={classes.center_picture} src={img}></img>
+          <img className={classes.center_picture} src={img} alt="Myself"></img>
         </div>
         <div className={`${classes.center_spinner}`} ref={spinnerRef}></div>
       </div>

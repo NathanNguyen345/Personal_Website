@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import classes from "./Landing.module.css";
 import LandingSlide from "./LandingSlide";
 import Backdrop from "./Backdrop";

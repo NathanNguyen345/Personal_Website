@@ -30,7 +30,7 @@ function LandingSlide() {
         "-=1"
       )
       .to(slideDiv.current, { y: "-96vh", duration: 0.5 }, "+=.2");
-  }, []);
+  });
 
   return (
     <div className={classes.slide} ref={slideDiv}>
