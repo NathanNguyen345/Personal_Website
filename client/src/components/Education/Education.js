@@ -10,9 +10,13 @@ function Education() {
   });
 
   return (
-    <div className={`${classes.education_wrapper} education_page row`}>
-      <EducationTitle />
-      {educationExpierence}
+    <div className={`${classes.education_wrapper} education_page`}>
+      <div className="container">
+        <div className="row">
+          <EducationTitle />
+          {educationExpierence}
+        </div>
+      </div>
     </div>
   );
 }

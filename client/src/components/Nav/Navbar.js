@@ -13,7 +13,9 @@ function Navbar() {
 
   return (
     <div className={`${classes.navbar_row}`} ref={navbarRef}>
-      <nav className={`${classes.navbar} navbar navbar-expand-lg fixed-top`}>
+      <nav
+        className={`${classes.navbar} navbar navbar-expand-lg navbar-light fixed-top`}
+      >
         <button
           className="navbar-toggler"
           type="button"

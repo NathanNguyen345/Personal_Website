@@ -6,17 +6,17 @@ import ProjectTitle from "./ProjectTitle";
 
 function Projects() {
   const projectExpierence = data.ProjectData.map((exp) => {
-    if (exp.id % 2 === 0) {
-      return <ProjectBullet key={exp.id} exp={exp} phase={"left"} />;
-    } else {
-      return <ProjectBullet key={exp.id} exp={exp} phase={"right"} />;
-    }
+    return <ProjectBullet key={exp.id} exp={exp} />;
   });
 
   return (
-    <div className={`${classes.project_wrapper} row project_page`}>
-      <ProjectTitle />
-      {projectExpierence}
+    <div className={`${classes.project_wrapper} project_page`}>
+      <div className="container">
+        <div className="row">
+          <ProjectTitle />
+          {projectExpierence}
+        </div>
+      </div>
     </div>
   );
 }
