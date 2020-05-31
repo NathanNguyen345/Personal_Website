@@ -1,5 +1,6 @@
 import React from "react";
 import data from "./ProjectData.json";
+import classes from "./Project.module.css";
 import ProjectBullet from "./ProjectBullet";
 import ProjectTitle from "./ProjectTitle";
 
@@ -13,7 +14,7 @@ function Projects() {
   });
 
   return (
-    <div className={`row`}>
+    <div className={`${classes.project_wrapper} row project_page`}>
       <ProjectTitle />
       {projectExpierence}
     </div>

@@ -8,7 +8,7 @@ function Landing() {
   useEffect(() => {});
 
   return (
-    <div className={`${classes.background}`}>
+    <div className={`${classes.background} home_page`}>
       <div className="row h-100 justify-content-center align-items-center">
         <Navbar />
         <div className={`${classes.backdrop_split} col-lg-4`}>1</div>

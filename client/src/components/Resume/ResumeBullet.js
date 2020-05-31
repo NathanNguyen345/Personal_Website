@@ -1,12 +1,37 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import classes from "./Resume.module.css";
 import ResumeImage from "./ResumeImage";
+import { gsap } from "gsap";
 
 function ResumeBullet(props) {
+  const bulletRef = useRef(null);
   const { logo, companyName, title, location, description } = props.exp;
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        gsap.fromTo(
+          bulletRef.current,
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 1.5 }
+        );
+      } else {
+        gsap.fromTo(
+          bulletRef.current,
+          { opacity: 1, y: 0 },
+          { opacity: 0, y: 50, duration: 1.5 }
+        );
+      }
+    });
+
+    observer.observe(bulletRef.current);
+  }, [bulletRef.current]);
+
   return (
-    <div className={`${classes.bullet} row justify-content-center`}>
+    <div
+      className={`${classes.bullet} row justify-content-center`}
+      ref={bulletRef}
+    >
       <div className={`col-lg-2`}>
         <ResumeImage id={logo} />
       </div>

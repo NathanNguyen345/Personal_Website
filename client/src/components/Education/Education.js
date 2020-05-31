@@ -10,7 +10,7 @@ function Education() {
   });
 
   return (
-    <div className={`${classes.education_wrapper} row`}>
+    <div className={`${classes.education_wrapper} education_page row`}>
       <EducationTitle />
       {educationExpierence}
     </div>

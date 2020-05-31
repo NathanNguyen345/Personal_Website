@@ -10,7 +10,7 @@ function Resume(exp) {
   });
 
   return (
-    <div className={`${classes.resume_wrapper} container`}>
+    <div className={`${classes.resume_wrapper} container resume_page`}>
       <ResumeTitle />
       {mapExpierence}
     </div>

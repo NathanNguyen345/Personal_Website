@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import classes from "./Navbar.module.css";
-import { TweenMax } from "gsap";
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
 
 function NavbarBullets() {
   const homeRef = useRef(null);
@@ -10,11 +13,15 @@ function NavbarBullets() {
   const aboutRef = useRef(null);
 
   const mouseOver = (ref) => {
-    TweenMax.to(ref.current, { scale: 1.2, duration: 0.5 });
+    gsap.to(ref.current, { scale: 1.2, duration: 0.5 });
   };
 
   const mouseOut = (ref) => {
-    TweenMax.to(ref.current, { scale: 1, duration: 0.5 });
+    gsap.to(ref.current, { scale: 1, duration: 0.5 });
+  };
+
+  const clickHandler = (location, ref) => {
+    gsap.to(window, { duration: 1, scrollTo: location });
   };
 
   return (
@@ -26,6 +33,7 @@ function NavbarBullets() {
               className={`${classes.navbar_button} test`}
               onMouseOver={() => mouseOver(homeRef)}
               onMouseOut={() => mouseOut(homeRef)}
+              onClick={() => clickHandler(".home_page")}
               ref={homeRef}
             >
               Home
@@ -36,6 +44,7 @@ function NavbarBullets() {
               className={`${classes.navbar_button} test`}
               onMouseOver={() => mouseOver(resumeRef)}
               onMouseOut={() => mouseOut(resumeRef)}
+              onClick={() => clickHandler(".resume_page")}
               ref={resumeRef}
             >
               Resume
@@ -46,6 +55,7 @@ function NavbarBullets() {
               className={`${classes.navbar_button} test`}
               onMouseOver={() => mouseOver(educationRef)}
               onMouseOut={() => mouseOut(educationRef)}
+              onClick={() => clickHandler(".education_page")}
               ref={educationRef}
             >
               Education
@@ -56,6 +66,7 @@ function NavbarBullets() {
               className={`${classes.navbar_button} test`}
               onMouseOver={() => mouseOver(projectRef)}
               onMouseOut={() => mouseOut(projectRef)}
+              onClick={() => clickHandler(".project_page")}
               ref={projectRef}
             >
               Projects
@@ -66,6 +77,7 @@ function NavbarBullets() {
               className={`${classes.navbar_button} test`}
               onMouseOver={() => mouseOver(aboutRef)}
               onMouseOut={() => mouseOut(aboutRef)}
+              onClick={() => clickHandler(".about_page")}
               ref={aboutRef}
             >
               About Me

@@ -5,7 +5,7 @@ import AboutImages from "./AboutImages";
 
 function About() {
   return (
-    <div className={`row`}>
+    <div className={`${classes.about_wrapper} row about_page`}>
       <AboutTitle />
       <AboutImages />
     </div>
