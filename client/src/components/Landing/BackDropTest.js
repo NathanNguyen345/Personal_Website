@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import classes from "./Landing.module.css";
+import test from "./LandingTest.module.css";
 import img from "./me.JPG";
 import { TimelineMax } from "gsap";
 
@@ -25,12 +25,12 @@ function Backdrop() {
       });
   });
   return (
-    <div>
-      <div className={`${classes.center_circle}`} ref={centerRef}>
-        <div className={`${classes.center_spinner_border}`}>
-          <img className={classes.center_picture} src={img} alt="Myself"></img>
+    <div className={`${test.flex}`}>
+      <div className={`${test.center_circle}`} ref={centerRef}>
+        <div className={`${test.center_spinner_border}`}>
+          <img className={test.center_picture} src={img} alt="Myself"></img>
         </div>
-        <div className={`${classes.center_spinner}`} ref={spinnerRef}></div>
+        <div className={`${test.center_spinner}`} ref={spinnerRef}></div>
       </div>
     </div>
   );

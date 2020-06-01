@@ -1,0 +1,122 @@
+.background {
+  background-color: white;
+  height: 100vh;
+}
+
+.grid {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 100vh;
+  grid-template-areas: "left center right";
+}
+
+.center {
+  background-color: transparent;
+  grid-area: "center";
+}
+
+.right {
+  background-color: transparent;
+  grid-area: "right";
+}
+
+.bottom {
+  text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  top: 65vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+.bottom h1 {
+  transform: scale(1.2);
+  font-size: calc(5vw + 15vh);
+  color: #dbdbdb;
+  letter-spacing: 50px;
+  opacity: 0.3;
+}
+
+/***** Backdrop *****/
+/* .center {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+} */
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.center_circle {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  border: 1px grey solid;
+  background-color: lightgrey;
+  opacity: 0;
+}
+
+.center_spinner_border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  border: 1px grey solid;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.center_spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  border: 20px lightgray solid;
+  border-color: #661719 white;
+  opacity: 0;
+}
+
+.center_picture {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  border: 15px white solid;
+  border-color: #661719;
+}
+
+.name {
+  position: absolute;
+  top: 45vh;
+  left: 68vw;
+  z-index: 3;
+  color: #3258a1;
+
+  font-size: calc(1vw + 5vh);
+  font-weight: bolder;
+  letter-spacing: -6px;
+  line-height: 70px;
+  text-align: left;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 2500px) {
+  .center_circle {
+    width: 32vw;
+    height: 32vw;
+  }
+} */

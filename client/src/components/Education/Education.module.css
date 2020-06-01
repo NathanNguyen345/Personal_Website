@@ -1,8 +1,19 @@
+.education_outter {
+  position: relative;
+  height: 40vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
 .education_wrapper {
   background-color: #661719;
   height: 40vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  left: -100vw;
 }
 
 .education_logo {
@@ -36,6 +47,11 @@
   .education_wrapper {
     height: 80vh;
   }
+
+  .education_outter {
+    height: 80vh;
+  }
+
   .education_logo {
     margin-bottom: 5px;
   }
@@ -46,6 +62,11 @@
   .education_wrapper {
     height: 65vh;
   }
+
+  .education_outter {
+    height: 65vh;
+  }
+
   .education_logo {
     margin-bottom: 10px;
   }
@@ -56,6 +77,11 @@
   .education_wrapper {
     height: 65vh;
   }
+
+  .education_outter {
+    height: 65vh;
+  }
+
   .education_logo {
     margin-bottom: 15px;
   }
@@ -66,6 +92,11 @@
   .education_wrapper {
     height: 35vh;
   }
+
+  .education_outter {
+    height: 35vh;
+  }
+
   .education_logo {
     margin-bottom: 20px;
   }
@@ -74,6 +105,10 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .education_wrapper {
+    height: 40vh;
+  }
+
+  .education_outter {
     height: 40vh;
   }
 }
