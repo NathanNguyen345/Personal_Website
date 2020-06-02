@@ -52,6 +52,10 @@
 .center {
   background-color: transparent;
   grid-area: "center";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
 
 .bottom {
@@ -71,14 +75,7 @@
   opacity: 0.3;
 }
 
-/***** Backdrop *****/
-.center {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-}
-
+/***** Flex *****/
 .flex {
   display: flex;
   flex-direction: column;
@@ -145,10 +142,107 @@
   text-align: left;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 2500px) {
-  .center_circle {
-    width: 32vw;
-    height: 32vw;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .bottom h1 {
+    font-size: calc(0vw + 0vh);
   }
-} */
+
+  .name {
+    position: absolute;
+    top: 75vh;
+    left: 0vw;
+    text-align: center;
+    width: 100vw;
+    font-size: calc(5vw + 5vh);
+    line-height: 50px;
+  }
+
+  .center_circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .center_spinner_border {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 270px;
+  }
+
+  .center_spinner {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 270px;
+  }
+
+  .center_picture {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 15px white solid;
+    border-color: #661719;
+  }
+
+  .welcome {
+    color: white;
+    padding-bottom: 5vh;
+    font-size: 40px;
+    letter-spacing: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .bottom h1 {
+    font-size: calc(5vw + 18vh);
+  }
+
+  .name {
+    top: 45vh;
+    left: 74vw;
+    font-size: calc(1vw + 5vh);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bottom h1 {
+    font-size: calc(5vw + 18vh);
+  }
+
+  .name {
+    top: 45vh;
+    left: 74vw;
+    font-size: calc(1vw + 5vh);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bottom h1 {
+    font-size: calc(5vw + 18vh);
+  }
+
+  .name {
+    top: 45vh;
+    left: 74vw;
+    font-size: calc(1vw + 5vh);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .bottom h1 {
+    font-size: calc(5vw + 18vh);
+  }
+
+  .name {
+    top: 45vh;
+    left: 74vw;
+    font-size: calc(1vw + 5vh);
+  }
+}

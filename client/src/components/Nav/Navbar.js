@@ -8,16 +8,14 @@ function Navbar() {
   const tl = new TimelineMax();
 
   useEffect(() => {
-    tl.to(navbarRef.current, { opacity: 1, duration: 1 }, "+=5.5");
+    tl.to(navbarRef.current, { opacity: 1, duration: 1 }, "+=5");
   });
 
   return (
     <div className={`${classes.navbar_row}`} ref={navbarRef}>
-      <nav
-        className={`${classes.navbar} navbar navbar-expand-lg navbar-light fixed-top`}
-      >
+      <nav className={`${classes.navbar} navbar navbar-expand-lg fixed-top`}>
         <button
-          className="navbar-toggler"
+          className={`${classes.navbar_toggler} navbar-toggler`}
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -25,7 +23,9 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span
+            className={`${classes.navbar_toggler_icon} navbar-toggler-icon`}
+          ></span>
         </button>
 
         <NavbarBullets />

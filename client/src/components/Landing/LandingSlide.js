@@ -29,7 +29,7 @@ function LandingSlide() {
         },
         "-=1"
       )
-      .to(slideDiv.current, { y: "-96vh", zIndex: 1, duration: 0.5 }, "+=.2");
+      .to(slideDiv.current, { y: "-100vh", zIndex: 1, duration: 0.5 }, "+=.2");
   });
 
   return (

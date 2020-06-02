@@ -1,8 +1,9 @@
 import React from "react";
+import classes from "./About.module.css";
 
 function AboutTitle() {
   return (
-    <div className={`col-lg-12`}>
+    <div className={`${classes.about_title} col-lg-12`}>
       <h1>About Me</h1>
     </div>
   );
