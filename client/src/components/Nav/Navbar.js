@@ -8,7 +8,7 @@ function Navbar() {
   const tl = new TimelineMax();
 
   useEffect(() => {
-    tl.to(navbarRef.current, { opacity: 1, duration: 1 }, "+=4.7");
+    tl.to(navbarRef.current, { opacity: 1, duration: 1 }, "+=5.5");
   });
 
   return (

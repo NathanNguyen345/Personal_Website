@@ -9,12 +9,16 @@ function Backdrop() {
   const tl = new TimelineMax();
 
   useEffect(() => {
-    tl.from(centerRef.current, {
-      y: -1000,
-      duration: 1.5,
-      ease: "bounce",
-      // delay: 5.7,
-    })
+    tl.from(
+      centerRef.current,
+      {
+        y: -1000,
+        duration: 1.5,
+        ease: "bounce",
+        delay: 5.5,
+      },
+      "+=1"
+    )
       .to(centerRef.current, { opacity: 1, duration: 1.5 }, "-=1.5")
       .to(spinnerRef.current, { opacity: 1, duration: 0.5 })
       .to(spinnerRef.current, {
@@ -25,7 +29,7 @@ function Backdrop() {
       });
   });
   return (
-    <div>
+    <div className={`${classes.flex}`}>
       <div className={`${classes.center_circle}`} ref={centerRef}>
         <div className={`${classes.center_spinner_border}`}>
           <img className={classes.center_picture} src={img} alt="Myself"></img>
