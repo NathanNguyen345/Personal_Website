@@ -1,13 +1,13 @@
 .education_outter {
   position: relative;
-  height: 40vh;
+  height: 45vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
 
 .education_wrapper {
   background-color: #661719;
-  height: 40vh;
+  height: 45vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
   position: absolute;
@@ -42,73 +42,32 @@
   font-size: 18px;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .education_wrapper {
-    height: 80vh;
+    height: 100vh;
   }
 
   .education_outter {
-    height: 80vh;
-  }
-
-  .education_logo {
-    margin-bottom: 5px;
+    height: 100vh;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
   .education_wrapper {
-    height: 65vh;
+    height: 70vh;
   }
 
   .education_outter {
-    height: 65vh;
-  }
-
-  .education_logo {
-    margin-bottom: 10px;
+    height: 70vh;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
   .education_wrapper {
-    height: 65vh;
+    height: 45vh;
   }
 
   .education_outter {
-    height: 65vh;
-  }
-
-  .education_logo {
-    margin-bottom: 15px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .education_wrapper {
-    height: 35vh;
-  }
-
-  .education_outter {
-    height: 35vh;
-  }
-
-  .education_logo {
-    margin-bottom: 20px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .education_wrapper {
-    height: 40vh;
-  }
-
-  .education_outter {
-    height: 40vh;
+    height: 45vh;
   }
 }

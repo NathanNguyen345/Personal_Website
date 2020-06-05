@@ -39,19 +39,11 @@
 }
 
 /* Large devices (laptops/desktops, 600px and up) */
-@media only screen and (max-width: 600px) {
-  .company_logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
   .company_logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
   }
 }

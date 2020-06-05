@@ -45,12 +45,13 @@ function ProjectBullet(props) {
     } else {
       return (
         <div className={`${classes.project_row} row`} ref={bulletRef}>
-          <div className={`col-lg-8`} ref={leftBulletRef}>
+          <div className={`col-lg-4 order-lg-12`} ref={rightBulletRef}>
+            <ProjectImg id={id} />
+          </div>
+
+          <div className={`col-lg-8 order-lg-1`} ref={leftBulletRef}>
             <h3>{title}</h3>
             <p>{description}</p>
-          </div>
-          <div className={`col-lg-4`} ref={rightBulletRef}>
-            <ProjectImg id={id} />
           </div>
         </div>
       );

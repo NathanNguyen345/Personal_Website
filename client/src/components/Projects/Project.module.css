@@ -16,3 +16,15 @@
   height: 300px;
   box-shadow: 10px 10px 10px lightgray;
 }
+
+@media only screen and (max-width: 992px) {
+  .card_img {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+}

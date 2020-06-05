@@ -63,13 +63,13 @@
   text-align: center;
   position: absolute;
   margin: 0 auto;
-  top: -25vh;
+  top: -20vh;
   width: 100vw;
   z-index: 0;
 }
 
 .bottom h1 {
-  font-size: calc(5vw + 20vh);
+  font-size: calc(5vw + 15vh);
   color: #dbdbdb;
   letter-spacing: 50px;
   opacity: 0.3;
@@ -131,7 +131,7 @@
 .name {
   position: absolute;
   top: 45vh;
-  left: 68vw;
+  left: calc(64vw + 20vh);
   z-index: 3;
   color: #3258a1;
 
@@ -142,7 +142,6 @@
   text-align: left;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .bottom h1 {
     font-size: calc(0vw + 0vh);
@@ -155,7 +154,7 @@
     text-align: center;
     width: 100vw;
     font-size: calc(5vw + 5vh);
-    line-height: 50px;
+    line-height: 65px;
   }
 
   .center_circle {
@@ -164,17 +163,11 @@
   }
 
   .center_spinner_border {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 270px;
     height: 270px;
   }
 
   .center_spinner {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 270px;
     height: 270px;
   }
@@ -182,9 +175,6 @@
   .center_picture {
     width: 270px;
     height: 270px;
-    border-radius: 50%;
-    border: 15px white solid;
-    border-color: #661719;
   }
 
   .welcome {
@@ -195,54 +185,168 @@
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   .bottom h1 {
-    font-size: calc(5vw + 18vh);
+    font-size: calc(0vw + 0vh);
   }
 
   .name {
-    top: 45vh;
-    left: 74vw;
-    font-size: calc(1vw + 5vh);
+    position: absolute;
+    top: 75vh;
+    left: 0vw;
+    text-align: center;
+    width: 100vw;
+    font-size: calc(5vw + 5vh);
+    line-height: 75px;
+  }
+
+  .center_circle {
+    width: 500px;
+    height: 500px;
+  }
+
+  .center_spinner_border {
+    width: 470px;
+    height: 470px;
+  }
+
+  .center_spinner {
+    width: 470px;
+    height: 470px;
+  }
+
+  .center_picture {
+    width: 470px;
+    height: 470px;
+  }
+
+  .welcome {
+    color: white;
+    padding-bottom: 5vh;
+    font-size: 80px;
+    letter-spacing: 20px;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .bottom h1 {
-    font-size: calc(5vw + 18vh);
+    font-size: calc(0vw + 0vh);
   }
 
   .name {
-    top: 45vh;
-    left: 74vw;
-    font-size: calc(1vw + 5vh);
+    position: absolute;
+    top: 75vh;
+    left: 0vw;
+    text-align: center;
+    width: 100vw;
+    font-size: calc(5vw + 5vh);
+    line-height: 82px;
+  }
+
+  .center_circle {
+    width: 500px;
+    height: 500px;
+  }
+
+  .center_spinner_border {
+    width: 470px;
+    height: 470px;
+  }
+
+  .center_spinner {
+    width: 470px;
+    height: 470px;
+  }
+
+  .center_picture {
+    width: 470px;
+    height: 470px;
+  }
+
+  .welcome {
+    color: white;
+    padding-bottom: 5vh;
+    font-size: 80px;
+    letter-spacing: 20px;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .bottom h1 {
-    font-size: calc(5vw + 18vh);
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .name {
+    position: absolute;
+    top: 45vh;
+    left: calc(50vw + 20vh);
+    font-size: calc(1vw + 4vh);
+    letter-spacing: -6px;
+    line-height: 50px;
+    text-align: left;
   }
 
-  .name {
-    top: 45vh;
-    left: 74vw;
-    font-size: calc(1vw + 5vh);
+  .bottom {
+    top: -10vh;
+  }
+
+  .bottom h1 {
+    font-size: calc(2vw + 10vh);
+  }
+
+  .center_circle {
+    width: 400px;
+    height: 400px;
+  }
+
+  .center_spinner_border {
+    width: 370px;
+    height: 370px;
+  }
+
+  .center_spinner {
+    width: 370px;
+    height: 370px;
+  }
+
+  .center_picture {
+    width: 370px;
+    height: 370px;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .bottom h1 {
-    font-size: calc(5vw + 18vh);
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .name {
+    position: absolute;
+    top: 45vh;
+    left: calc(55vw + 20vh);
+    font-size: calc(1vw + 4vh);
+    letter-spacing: -6px;
+    line-height: 50px;
+    text-align: left;
   }
 
-  .name {
-    top: 45vh;
-    left: 74vw;
-    font-size: calc(1vw + 5vh);
+  .bottom {
+    top: -10vh;
+  }
+
+  .bottom h1 {
+    font-size: calc(5vw + 10vh);
+  }
+
+  .center_circle {
+    width: 600px;
+    height: 600px;
+  }
+
+  .center_spinner_border {
+    width: 570px;
+    height: 570px;
+  }
+
+  .center_spinner {
+    width: 570px;
+    height: 570px;
+  }
+
+  .center_picture {
+    width: 570px;
+    height: 570px;
   }
 }
