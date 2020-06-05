@@ -32,13 +32,13 @@ function ResumeBullet(props) {
       <div className={`col-lg-8`}>
         <div className={`row`}>
           <div className={`col-lg-12`}>
-            <h2 className={classes.companyName}>{companyName}</h2>
+            <h3 className={classes.companyName}>{companyName}</h3>
           </div>
           <div className={`col-lg-12`}>
-            <h3 className={classes.title}>{title}</h3>
+            <h4 className={classes.title}>{title}</h4>
           </div>
           <div className={`col-lg-12`}>
-            <h4 className={classes.location}>{location}</h4>
+            <h5 className={`${classes.location} theme`}>{location}</h5>
           </div>
           <div className={`col-lg-12`}>
             <p>{description}</p>

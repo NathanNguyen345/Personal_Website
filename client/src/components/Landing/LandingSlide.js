@@ -39,7 +39,7 @@ function LandingSlide() {
         ref={slideBlock1}
       ></div>
       <div className={`${classes.slide_block} col-lg-12`} ref={slideBlock2}>
-        <h3
+        <h1
           className={`${classes.welcome} welcome row h-100 justify-content-center align-items-center`}
           ref={welcomeRef}
         >
@@ -50,7 +50,7 @@ function LandingSlide() {
           <div className={`${classes.welcome_text} welcome_text`}>O</div>
           <div className={`${classes.welcome_text} welcome_text`}>M</div>
           <div className={`${classes.welcome_text} welcome_text`}>E</div>
-        </h3>
+        </h1>
       </div>
       <div
         className={`${classes.slide_block} col-lg-12`}

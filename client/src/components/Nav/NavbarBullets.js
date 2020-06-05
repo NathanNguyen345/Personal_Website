@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
 import classes from "./Navbar.module.css";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ThemeContext } from "../../App";
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -11,6 +12,8 @@ function NavbarBullets() {
   const educationRef = useRef(null);
   const projectRef = useRef(null);
   const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+  const themeContext = useContext(ThemeContext);
 
   const mouseOver = (ref) => {
     gsap.to(ref.current, { scale: 1.2, duration: 0.5 });
@@ -22,6 +25,10 @@ function NavbarBullets() {
 
   const clickHandler = (location, ref) => {
     gsap.to(window, { duration: 1, scrollTo: location });
+  };
+
+  const toggleTheme = () => {
+    themeContext.themeDispatch({ type: "themeToggle" });
   };
 
   return (
@@ -86,13 +93,16 @@ function NavbarBullets() {
           <li className={`${classes.navbar_li} nav-item`}>
             <button
               className={`${classes.navbar_button} test`}
-              onMouseOver={() => mouseOver(aboutRef)}
-              onMouseOut={() => mouseOut(aboutRef)}
+              onMouseOver={() => mouseOver(contactRef)}
+              onMouseOut={() => mouseOut(contactRef)}
               onClick={() => clickHandler(".footer_page")}
-              ref={aboutRef}
+              ref={contactRef}
             >
               Contact
             </button>
+          </li>
+          <li className={`${classes.navbar_li} nav-item`}>
+            <button onClick={toggleTheme}>Darkmode</button>
           </li>
         </ul>
       </div>

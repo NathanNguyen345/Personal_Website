@@ -37,7 +37,7 @@ function ProjectBullet(props) {
             <ProjectImg id={id} />
           </div>
           <div className={`col-lg-8`} ref={rightBulletRef}>
-            <h3>{title}</h3>
+            <h3 className={classes.title_red}>{title}</h3>
             <p>{description}</p>
           </div>
         </div>
@@ -50,7 +50,7 @@ function ProjectBullet(props) {
           </div>
 
           <div className={`col-lg-8 order-lg-1`} ref={leftBulletRef}>
-            <h3>{title}</h3>
+            <h3 className={classes.title_blue}>{title}</h3>
             <p>{description}</p>
           </div>
         </div>

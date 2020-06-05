@@ -6,6 +6,8 @@ import { gsap, TimelineMax } from "gsap";
 function Footer() {
   const imgRef = useRef(null);
   const backgroundRef = useRef(null);
+  const titleRef = useRef(null);
+  const copyRef = useRef(null);
   const tl = new TimelineMax();
 
   const mouseEnter = () => {
@@ -13,19 +15,24 @@ function Footer() {
       rotationZ: "360",
       scale: 1.5,
       duration: 1,
-    }).to(
-      backgroundRef.current,
-      {
-        background: "black",
-        duration: 1,
-      },
-      "-=1"
-    );
-    // gsap.to(imgRef.current, {
-    //   rotationZ: "360",
-    //   scale: 1.5,
-    //   duration: 1,
-    // });
+    })
+      .to(
+        backgroundRef.current,
+        {
+          background: "black",
+          duration: 1,
+        },
+        "-=1"
+      )
+      .set(
+        [titleRef.current, copyRef.current],
+        {
+          webkitFilter: "blur(2px)",
+          filter: "blur(2px)",
+          duration: 2,
+        },
+        "-=2"
+      );
   };
 
   const mouseLeave = () => {
@@ -33,19 +40,24 @@ function Footer() {
       rotationZ: "-360",
       scale: 1,
       duration: 1,
-    }).to(
-      backgroundRef.current,
-      {
-        background: "#661719",
-        duration: 1,
-      },
-      "-=1"
-    );
-    // gsap.to(imgRef.current, {
-    //   rotationZ: "-360",
-    //   scale: 1,
-    //   duration: 1,
-    // });
+    })
+      .to(
+        backgroundRef.current,
+        {
+          background: "#661719",
+          duration: 1,
+        },
+        "-=1"
+      )
+      .set(
+        [titleRef.current, copyRef.current],
+        {
+          webkitFilter: "blur(0px)",
+          filter: "blur(0px)",
+          duration: 2,
+        },
+        "-=2"
+      );
   };
 
   return (
@@ -53,7 +65,7 @@ function Footer() {
       className={`${classes.footer_wrapper} footer_page`}
       ref={backgroundRef}
     >
-      <h1>Let's Connect</h1>
+      <h1 ref={titleRef}>Let's Connect</h1>
 
       <a
         href="https://www.linkedin.com/in/nathannguyen345/"
@@ -68,7 +80,7 @@ function Footer() {
         ></img>
       </a>
 
-      <h4>&copy; Copyright 2020</h4>
+      <h4 ref={copyRef}>&copy; Copyright 2020</h4>
     </div>
   );
 }
