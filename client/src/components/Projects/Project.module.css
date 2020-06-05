@@ -3,12 +3,20 @@
   background-color: white;
 }
 
-.project_title {
+.project_title h1 {
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-weight: bold;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .project_row {
   margin: 100px 0 100px 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card_img {
@@ -19,7 +27,11 @@
 
 @media only screen and (max-width: 992px) {
   .card_img {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+  }
+
+  .project_row {
+    margin: 50px 0px 50px 0px;
   }
 }
 

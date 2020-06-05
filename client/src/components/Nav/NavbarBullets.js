@@ -83,6 +83,17 @@ function NavbarBullets() {
               About Me
             </button>
           </li>
+          <li className={`${classes.navbar_li} nav-item`}>
+            <button
+              className={`${classes.navbar_button} test`}
+              onMouseOver={() => mouseOver(aboutRef)}
+              onMouseOut={() => mouseOut(aboutRef)}
+              onClick={() => clickHandler(".footer_page")}
+              ref={aboutRef}
+            >
+              Contact
+            </button>
+          </li>
         </ul>
       </div>
     </React.Fragment>

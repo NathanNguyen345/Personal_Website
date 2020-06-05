@@ -69,7 +69,7 @@
 }
 
 .bottom h1 {
-  font-size: calc(5vw + 15vh);
+  font-size: calc(5vw + 14vh);
   color: #dbdbdb;
   letter-spacing: 50px;
   opacity: 0.3;
@@ -131,7 +131,7 @@
 .name {
   position: absolute;
   top: 45vh;
-  left: calc(64vw + 20vh);
+  left: calc(62vw + 20vh);
   z-index: 3;
   color: #3258a1;
 
@@ -284,10 +284,11 @@
 
   .bottom {
     top: -10vh;
+    left: 10px;
   }
 
   .bottom h1 {
-    font-size: calc(2vw + 10vh);
+    font-size: calc(2.5vw + 10vh);
   }
 
   .center_circle {
@@ -327,7 +328,8 @@
   }
 
   .bottom h1 {
-    font-size: calc(5vw + 10vh);
+    font-size: calc(5vw + 13vh);
+    letter-spacing: 30px;
   }
 
   .center_circle {
