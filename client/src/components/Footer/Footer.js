@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import classes from "./Footer.module.css";
 import icon from "../../images//Footer/linkedin.png";
-import { gsap, TimelineMax } from "gsap";
+import { TimelineMax } from "gsap";
 
 function Footer() {
   const imgRef = useRef(null);

@@ -5,7 +5,6 @@ import classes from "./Resume.module.css";
 import data from "./ResumeExpierenceData.json";
 import { ThemeContext } from "../../App";
 import { gsap } from "gsap";
-import { _numWithUnitExp } from "gsap/gsap-core";
 
 function Resume(exp) {
   const themeContext = useContext(ThemeContext);

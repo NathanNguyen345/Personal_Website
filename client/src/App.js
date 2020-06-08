@@ -15,6 +15,9 @@ const themeReducer = (state, action) => {
   switch (action.type) {
     case "themeToggle":
       return { light: !state.light };
+
+    default:
+      return;
   }
 };
 

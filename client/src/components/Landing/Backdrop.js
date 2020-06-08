@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useContext, useState } from "react";
+import React, { useEffect, useRef, useContext } from "react";
 import classes from "./Landing.module.css";
 import img from "./me.JPG";
 import { gsap, TimelineMax } from "gsap";
