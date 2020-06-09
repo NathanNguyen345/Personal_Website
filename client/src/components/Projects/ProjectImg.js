@@ -34,7 +34,7 @@ function ProjectImg(props) {
         return (
           <img
             className={classes.card_img}
-            src={require("../../images/Projects/yelp.png")}
+            src={require("../../images/Projects/yelp-logo.png")}
             alt={"Yelp NLP"}
           ></img>
         );

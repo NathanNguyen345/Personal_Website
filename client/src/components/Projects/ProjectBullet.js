@@ -18,14 +18,28 @@ function ProjectBullet(props) {
       if (entry.isIntersecting) {
         gsap.fromTo(
           leftBulletRef.current,
-          { opacity: 0, x: -50 },
-          { opacity: 1, x: 0, duration: 1.5 }
+          {
+            opacity: 0,
+            x: -50,
+          },
+          {
+            opacity: 1,
+            x: 0,
+            duration: 1.5,
+          }
         );
 
         gsap.fromTo(
           rightBulletRef.current,
-          { opacity: 0, x: 50 },
-          { opacity: 1, x: 0, duration: 1.5 }
+          {
+            opacity: 0,
+            x: 50,
+          },
+          {
+            opacity: 1,
+            x: 0,
+            duration: 1.5,
+          }
         );
       }
     });
