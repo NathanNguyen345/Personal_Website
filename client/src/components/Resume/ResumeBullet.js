@@ -7,6 +7,9 @@ function ResumeBullet(props) {
   const bulletRef = useRef(null);
   const { logo, companyName, title, location, description } = props.exp;
 
+  /*****
+   * Intersection observer for resume div initiates GSAP fade in animation
+   */
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {

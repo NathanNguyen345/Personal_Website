@@ -7,6 +7,9 @@ function Navbar() {
   const navbarRef = useRef(null);
   const tl = new TimelineMax();
 
+  /*****
+   * GSAP fade navbar in after sliding intro
+   */
   useEffect(() => {
     tl.to(navbarRef.current, { opacity: 1, duration: 1 }, "+=5.5");
   });
@@ -27,7 +30,6 @@ function Navbar() {
             className={`${classes.navbar_toggler_icon} navbar-toggler-icon`}
           ></span>
         </button>
-
         <NavbarBullets />
       </nav>
     </div>

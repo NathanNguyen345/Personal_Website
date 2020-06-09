@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useContext } from "react";
 import classes from "./Landing.module.css";
-import img from "./me.JPG";
+import img from "../../images/Landing/me.JPG";
 import { gsap, TimelineMax } from "gsap";
 import { ThemeContext } from "../../App";
 

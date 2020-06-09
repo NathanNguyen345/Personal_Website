@@ -26,7 +26,7 @@ function ProjectImg(props) {
         return (
           <img
             className={classes.card_img}
-            src={require("../../images/Projects/user_sync.jpg")}
+            src={require("../../images/Projects/sf_crime.jpg")}
             alt={"SF Crime Data"}
           ></img>
         );
@@ -34,7 +34,7 @@ function ProjectImg(props) {
         return (
           <img
             className={classes.card_img}
-            src={require("../../images/Projects/user_sync.jpg")}
+            src={require("../../images/Projects/yelp.png")}
             alt={"Yelp NLP"}
           ></img>
         );

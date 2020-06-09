@@ -7,8 +7,14 @@ import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 
+/****
+ * Export theme content to be used throughout the rest of the application
+ */
 export const ThemeContext = React.createContext();
 
+/*****
+ * Initial state and reducer for theme mode
+ */
 const initialThemeState = { light: true };
 
 const themeReducer = (state, action) => {

@@ -10,6 +10,9 @@ function ProjectBullet(props) {
   const leftBulletRef = useRef(null);
   const rightBulletRef = useRef(null);
 
+  /*****
+   * Intersection observer kicks off GSAP animation for slide in and fade in
+   */
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
@@ -29,6 +32,9 @@ function ProjectBullet(props) {
     observer.observe(bulletRef.current);
   }, [bulletRef]);
 
+  /*****
+   * Alternate component layout depending on phase
+   */
   const renderPhase = () => {
     if (phase === "left") {
       return (

@@ -10,6 +10,9 @@ function Footer() {
   const copyRef = useRef(null);
   const tl = new TimelineMax();
 
+  /*****
+   * GSAP scale and blur background animation
+   */
   const mouseEnter = () => {
     tl.to(imgRef.current, {
       rotationZ: "360",
@@ -35,6 +38,9 @@ function Footer() {
       );
   };
 
+  /*****
+   * GSAP returns everthing back to normal on exit
+   */
   const mouseLeave = () => {
     tl.to(imgRef.current, {
       rotationZ: "-360",

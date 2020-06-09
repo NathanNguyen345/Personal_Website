@@ -8,9 +8,11 @@ function LandingSlide() {
   const slideBlock3 = useRef(null);
   const welcomeRef = useRef(null);
   const slideDiv = useRef(null);
-
   const tl = new TimelineMax();
 
+  /*****
+   * GSAP timeline for Welcome sliding intro page
+   */
   useEffect(() => {
     tl.to(slideBlock1.current, { x: "100vw", duration: 0.5 })
       .to(slideBlock2.current, { x: "100vw", duration: 0.5 })

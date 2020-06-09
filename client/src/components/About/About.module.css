@@ -12,6 +12,11 @@
   text-align: center;
 }
 
+.about_wrapper p {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
 .flex {
   display: flex;
   width: 100vw;

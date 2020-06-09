@@ -35,6 +35,9 @@ function Resume(exp) {
     }
   }, [themeContext.lightTheme]);
 
+  /*****
+   * Map resume expierence to their own component
+   */
   const mapExpierence = data.ResumeExpierenceData.map((exp, index) => {
     return <ResumeBullet key={index} exp={exp} />;
   });

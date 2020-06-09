@@ -5,6 +5,9 @@ import ProjectBullet from "./ProjectBullet";
 import ProjectTitle from "./ProjectTitle";
 
 function Projects() {
+  /*****
+   * Determine which phase to assign project bullets
+   */
   const projectExpierence = data.ProjectData.map((exp) => {
     if (exp.id % 2 === 0) {
       return <ProjectBullet key={exp.id} exp={exp} phase={"left"} />;

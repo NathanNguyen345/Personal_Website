@@ -8,6 +8,9 @@ import { gsap } from "gsap";
 function Education() {
   const educationRef = useRef(null);
 
+  /*****
+   * Intersection observer initates GSAP bounce animation
+   */
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
@@ -22,6 +25,9 @@ function Education() {
     observer.observe(educationRef.current);
   }, [educationRef]);
 
+  /*****
+   * Map education to a component
+   */
   const educationExpierence = data.EducationData.map((exp) => {
     return <EducationBullet key={exp.logo} exp={exp} />;
   });
