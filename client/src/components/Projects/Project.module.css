@@ -40,6 +40,17 @@
   color: #3258a1;
 }
 
+.repo_link {
+  color: #3258a1;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none !important;
+}
+
+.repo_link:hover {
+  color: #661719;
+}
+
 @media only screen and (max-width: 992px) {
   .card_img {
     margin-bottom: 50px;

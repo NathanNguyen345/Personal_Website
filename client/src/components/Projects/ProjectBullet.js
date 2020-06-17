@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import ProjectImg from "./ProjectImg";
 
 function ProjectBullet(props) {
-  const { title, description, id } = props.exp;
+  const { title, description, links, id } = props.exp;
   const phase = props.phase;
   const bulletRef = useRef(null);
   const leftBulletRef = useRef(null);
@@ -46,6 +46,14 @@ function ProjectBullet(props) {
     observer.observe(bulletRef.current);
   }, [bulletRef]);
 
+  const renderLinks = Object.keys(links).map((key, i) => {
+    return (
+      <a className={classes.repo_link} href={links[key]} key={i}>
+        {key}
+      </a>
+    );
+  });
+
   /*****
    * Alternate component layout depending on phase
    */
@@ -59,6 +67,7 @@ function ProjectBullet(props) {
           <div className={`col-lg-8`} ref={rightBulletRef}>
             <h3 className={classes.title_red}>{title}</h3>
             <p>{description}</p>
+            {renderLinks}
           </div>
         </div>
       );
@@ -72,6 +81,7 @@ function ProjectBullet(props) {
           <div className={`col-lg-8 order-lg-1`} ref={leftBulletRef}>
             <h3 className={classes.title_blue}>{title}</h3>
             <p>{description}</p>
+            {renderLinks}
           </div>
         </div>
       );
