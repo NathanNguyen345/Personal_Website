@@ -31,7 +31,7 @@
       "title": "Yelp Natural Language Processing",
       "description": "This project demonstrated how we can achieve sentimental analysis with a heavy dataset provided by Yelp dataset challenges. The file provides us with over 4 million reviews from different businesses all over the world. This analysis will be focusing on restaurant reviews. We want to be able to find correlations between restaurants and provide positive and negative sentiment on different types of foods provided by restaurants. The goal is to be able to understand what the reviews are telling us on a deeper level and provide recommendations depending on user input. Not only will we provide recommendations for restaurants, but we will also provide recommendations for similar dishes.",
       "links": {
-        "Github": "https://github.com/NathanNguyen345/SF_Crime_DS/blob/master/README.md"
+        "Github": "https://github.com/NathanNguyen345/Yelp-NLP/blob/master/Yelp%20NLP.ipynb"
       }
     }
   ]
