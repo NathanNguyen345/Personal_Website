@@ -17,6 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 10vw 0px 10vw;
 }
 
 .project_row p {
@@ -58,5 +59,17 @@
 
   .project_row {
     margin: 50px 0px 50px 0px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .project_row {
+    margin: 100px -12vw 100px -12vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .project_row {
+    margin: 100px -5vw 100px -5vw;
   }
 }

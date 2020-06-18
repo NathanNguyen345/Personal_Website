@@ -1,6 +1,14 @@
 {
   "ProjectData": [
     {
+      "id": "5",
+      "title": "Travel Time",
+      "description": "Travel time is a personal travel blog website that I designed and built from the ground up. I started with designing the layout in Adobe XD. Once I had a vision of what I wanted the website to look like, I started development. The website is put built using React, HTML, CSS, and GSAP for simple animation. I wanted to focus on React Router and this was the perfect project to do so. Each location sends the end-user to a different endpoint. I also wanted to focus on a better understanding of the CSS flex and grid system to build responsive websites without having to rely on BootStrap.",
+      "links": {
+        "Github": "https://github.com/NathanNguyen345/Travel_Time"
+      }
+    },
+    {
       "id": "4",
       "title": "Adobe Sign Dynamic Workflow",
       "description": "I developed this application because I found that there was a product gap between our product and our competitors. Dynamic workflows allow users to specify the next participants within an agreement by exposing internal workflows to external users. It replicates the workflow created in the workflow designer by creating a web form version. Both internal and external users can initiate an agreement using the selected workflow. This application allows the user to have a sense of dynamic recipient routing. Workflow creator can have the ability to hide all workflows with predefined recipients. Another option is to selectively target workflows and hide their predefined recipients. The workflow tool allows users to input CC recipients as well as hiding predefined CC recipients. This form allows the user to change the document name and messages to participating recipients. The users can upload supporting documents as well. Merge fields are also allowed to merge data from user input into the agreement for signatures. Users can also have the ability to set open passwords for their agreements. Users can set when an agreement needs to be completed within a 180 range. This application allows for 6 different types of reminder frequencies. This application was build using HTML, CSS, JavaScript, and Bootstrap. Later it was then converted to ReactJS. This project was made to be open-source, so our customers can simply clone the original and add additional functionality on top if needed.",

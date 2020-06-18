@@ -6,6 +6,14 @@ function ProjectImg(props) {
 
   const getImage = (id) => {
     switch (id) {
+      case "5":
+        return (
+          <img
+            className={classes.card_img}
+            src={require("../../images/Projects/TravelTime.png")}
+            alt={"Adobe Sign Workflow"}
+          ></img>
+        );
       case "4":
         return (
           <img
