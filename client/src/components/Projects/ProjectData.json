@@ -3,7 +3,7 @@
     {
       "id": "5",
       "title": "Travel Time",
-      "description": "Travel time is a personal travel blog website that I designed and built from the ground up. I started with designing the layout in Adobe XD. Once I had a vision of what I wanted the website to look like, I started development. The website is put built using React, HTML, CSS, and GSAP for simple animation. I wanted to focus on React Router and this was the perfect project to do so. Each location sends the end-user to a different endpoint. I also wanted to focus on a better understanding of the CSS flex and grid system to build responsive websites without having to rely on BootStrap.",
+      "description": "Travel time is a personal travel blog website that I'm currently building from the ground up. I started designing the layout using Adobe XD. This will be a full-stack application using React, HTML, CSS, Express, MongoDB, and GSAP.  Each location sends the end-user to a different endpoint using React Router, which will then consume the API generated from Express querying data from the MongoDB to display information about each location. The end-user will have the ability to like, dislike, and comment on the picture, which will re-render the component with the latest information. The end-user, when logged in, will have access to a user control panel, which will show information about comments that others have liked or disliked. I also wanted to focus on a better understanding of the CSS flex and grid system to build responsive websites without having to rely on BootStrap.",
       "links": {
         "Github": "https://github.com/NathanNguyen345/Travel_Time"
       }
